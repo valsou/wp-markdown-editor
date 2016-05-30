@@ -115,7 +115,13 @@ class WpMarkdownEditor
                 // Init the editor
                 var simplemde = new SimpleMDE({
                     spellChecker: false,
-                    element: document.getElementById("content")
+                    element: document.getElementById("content"),
+                    toolbar: [{
+                        name: "bold",
+                        action: SimpleMDE.toggleBold,
+                        className: "fa fa-bold",
+                        title: "Bold",
+                    }
                 });
                 
                 if (typeof jQuery !== "undefined") {
