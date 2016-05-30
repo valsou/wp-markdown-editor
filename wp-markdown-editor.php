@@ -126,7 +126,7 @@ class WpMarkdownEditor
                         name: "table",
                         action: SimpleMDE.drawTable,
                         className: "fa fa-table",
-                        title: "Table",
+                        title: "Table (shortcut soon)",
                     },
                     {
                         name: "code",
