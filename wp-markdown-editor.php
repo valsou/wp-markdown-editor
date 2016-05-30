@@ -133,6 +133,12 @@ class WpMarkdownEditor
                         action: SimpleMDE.toggleCodeBlock,
                         className: "fa fa-code",
                         title: "Code",
+                    },
+                    {
+                        name: "preview",
+                        action: SimpleMDE.togglePreview,
+                        className: "fa fa-eye",
+                        title: "Preview",
                     }]
                 });
                 
