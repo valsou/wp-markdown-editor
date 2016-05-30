@@ -121,6 +121,18 @@ class WpMarkdownEditor
                         action: SimpleMDE.toggleBold,
                         className: "fa fa-bold",
                         title: "Bold",
+                    },
+                    {
+                        name: "table",
+                        action: SimpleMDE.drawTable,
+                        className: "fa fa-table",
+                        title: "Table",
+                    },
+                    {
+                        name: "code",
+                        action: SimpleMDE.toggleCodeBlock,
+                        className: "fa fa-code",
+                        title: "Code",
                     }]
                 });
                 
