@@ -118,35 +118,6 @@ class WpMarkdownEditor
                     element: document.getElementById("content")
                 });
 
-                // Change zIndex when toggle full screen
-                var change_zIndex = function(editor) {
-                    // Give it some time to finish the transition
-                    setTimeout(function() {
-                        var cm = editor.codemirror;
-                        var wrap = cm.getWrapperElement();
-                        if(/fullscreen/.test(wrap.previousSibling.className)) {
-                            document.getElementById("wp-content-editor-container").style.zIndex = 999999;
-                        } else {
-                            document.getElementById("wp-content-editor-container").style.zIndex = 1;
-                        }
-                    }, 2);
-                }
-
-                var toggleFullScreenButton = document.getElementsByClassName("fa-arrows-alt");
-                toggleFullScreenButton[0].onclick = function() {
-                    SimpleMDE.toggleFullScreen(simplemde);
-                    change_zIndex(simplemde);
-                }
-
-                var toggleSideBySideButton = document.getElementsByClassName("fa-columns");
-                toggleSideBySideButton[0].onclick = function() {
-                    SimpleMDE.toggleSideBySide(simplemde);
-                    change_zIndex(simplemde);
-                }
-
-                var helpButton = document.getElementsByClassName("fa-question-circle");
-                helpButton[0].href = "http://hoducha.com/markdown-guide.html";
-
                 if (typeof jQuery !== "undefined") {
                     jQuery(document).ready(function(){
                         // Remove the quicktags-toolbar
