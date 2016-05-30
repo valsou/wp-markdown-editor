@@ -124,9 +124,11 @@ class WpMarkdownEditor
                     }]
                 });
                 
-                if (typeof jQuery === "undefined") {
-                    // Remove the quicktags-toolbar
-                    document.getElementById("ed_toolbar").style.display = "none";
+                if (typeof jQuery !== "undefined") {
+                    jQuery(document).ready(function(){
+                        // Remove the quicktags-toolbar
+                        document.getElementById("ed_toolbar").style.display = "none";
+                    });
                 }
                 
             </script>';
