@@ -137,7 +137,7 @@ class WpMarkdownEditor
                     {
                         name: "preview",
                         action: SimpleMDE.togglePreview,
-                        className: "fa fa-eye",
+                        className: "fa fa-eye no-disable",
                         title: "Preview",
                     }]
                 });
