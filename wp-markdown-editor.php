@@ -121,7 +121,7 @@ class WpMarkdownEditor
                         action: SimpleMDE.toggleBold,
                         className: "fa fa-bold",
                         title: "Bold",
-                    }
+                    }]
                 });
                 
                 if (typeof jQuery !== "undefined") {
