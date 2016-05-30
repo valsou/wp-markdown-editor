@@ -124,18 +124,9 @@ class WpMarkdownEditor
                     }]
                 });
                 
-                if (typeof jQuery !== "undefined") {
- -                    jQuery(document).ready(function(){
- -                        // Remove the quicktags-toolbar
- -                        document.getElementById("ed_toolbar").style.display = "none";
- -
- -                        // Integrate with WP Media module
- -                        var original_wp_media_editor_insert = wp.media.editor.insert;
- -                        wp.media.editor.insert = function( html ) {
- -                            original_wp_media_editor_insert(html);
- -                            simplemde.codemirror.replaceSelection(html);
- -                        }
- -                    });
+                if (typeof jQuery === "undefined") {
+ -                  // Remove the quicktags-toolbar
+ -                  document.getElementById("ed_toolbar").style.display = "none";
  -                }
                 
             </script>';
